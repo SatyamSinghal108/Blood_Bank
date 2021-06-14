@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backred"
+    tools:context=".UI.Login.Adminlogin">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:text="ADMINISTRATOR LOGIN"/>
+
+    <EditText
+        android:id="@+id/aemail"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingHorizontal="15dp"
+        android:hint="ADM. Email ID..."
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edittext"/>
+
+    <EditText
+        android:id="@+id/apass"
+        android:layout_below="@+id/aemail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingHorizontal="15dp"
+        android:layout_margin="5dp"
+        android:hint="Password..."
+        android:inputType="textPassword"
+        android:background="@drawable/edittext"/>
+
+
+    <Button
+        android:id="@+id/alogin"
+        android:layout_below="@+id/apass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="5dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@drawable/buttonback"/>
+
+    <TextView
+        android:id="@+id/afrgtpass"
+        android:layout_below="@+id/alogin"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:text="forget password ?"/>
+
+
+
+    <TextView
+        android:id="@+id/anwadmin"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:text="New Administrator ! Sign-up"/>
+
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_below="@+id/afrgtpass"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:text="OR"/>
+
+
+    <LinearLayout
+        android:id="@+id/gf"
+        android:layout_below="@+id/or"
+        android:weightSum="2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:background="@drawable/circle_shape"
+        android:src="@drawable/google_logo"
+        />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle_shape"
+        android:src="@drawable/facebook_logo"
+        />
+    </LinearLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backred"
+    tools:context=".UI.Sign.Newadmin">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:text="ADMINISTRATOR SIGN-UP"/>
+
+    <EditText
+        android:id="@+id/aname"
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingHorizontal="15dp"
+        android:hint="Full Name..."
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="text"
+        android:background="@drawable/edittext"/>
+
+    <EditText
+        android:id="@+id/abank"
+        android:layout_below="@+id/aname"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingHorizontal="15dp"
+        android:layout_margin="5dp"
+        android:hint="Blood Bank/Hospital Name..."
+        android:inputType="text"
+        android:background="@drawable/edittext"/>
+
+    <EditText
+        android:id="@+id/aemail"
+        android:layout_below="@+id/abank"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingHorizontal="15dp"
+        android:layout_margin="5dp"
+        android:hint="Email Id..."
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edittext"/>
+
+    <EditText
+        android:id="@+id/apass"
+        android:layout_below="@+id/aemail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingHorizontal="15dp"
+        android:layout_margin="5dp"
+        android:hint="Password..."
+        android:inputType="textPassword"
+        android:background="@drawable/edittext"/>
+
+    <EditText
+        android:id="@+id/aconfpass"
+        android:layout_below="@+id/apass"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingHorizontal="15dp"
+        android:layout_margin="5dp"
+        android:hint="Confirm Password..."
+        android:inputType="textPassword"
+        android:background="@drawable/edittext"/>
+
+
+    <Button
+        android:id="@+id/asign"
+        android:layout_below="@+id/aconfpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="5dp"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@drawable/buttonback"/>
+
+
+
+
+
+    <TextView
+        android:id="@+id/nwadmin"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:text="Already Registered! Login"/>
+
+</RelativeLayout>

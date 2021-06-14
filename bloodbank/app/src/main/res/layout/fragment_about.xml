@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.about.AboutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"/>
+    <TextView
+        android:id="@+id/appname"
+        android:layout_below="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Bank"
+        android:layout_marginStart="20dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/backred"/>
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_below="@+id/appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi, We the students of Group 4 are behind this app. "
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:textSize="23sp"
+
+            android:textColor="@color/backred"/>
+
+
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_below="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If you have any Queries,Feel free to contact us."
+            android:layout_marginStart="20dp"
+            android:textSize="23sp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/backred"/>
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_above="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Give me feedback on:"
+            android:layout_marginStart="20dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#5D5758"/>
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="abcxyz@gmail.com"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="23sp"
+
+            android:textColor="@color/backred"/>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

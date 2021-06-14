@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/homes" android:title="Home"
+        android:icon="@drawable/ic_home"/>
+
+    <item android:id="@+id/finds" android:title="Find Blood Nearby"
+        android:icon="@drawable/ic_find"/>
+
+    <item android:id="@+id/donates" android:title="Donate Blood"
+        android:icon="@drawable/ic_donate"/>
+
+    <item android:id="@+id/hospitals" android:title="Hospital Nearby"
+        android:icon="@drawable/ic_hospital"/>
+
+    <item android:id="@+id/setting" android:title="Setting"
+        android:icon="@drawable/ic_setting"/>
+
+    <item android:id="@+id/abouts" android:title="About"
+        android:icon="@drawable/ic_about"/>
+
+    <item android:id="@+id/logouts" android:title="Logout"
+        android:icon="@drawable/ic_logout"/>
+
+
+</menu>
