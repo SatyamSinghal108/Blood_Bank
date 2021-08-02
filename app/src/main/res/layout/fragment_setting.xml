@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backred"
+    tools:context=".ui.settings.settingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+          <Button
+              android:id="@+id/btn1"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_margin="10dp"
+          android:background="@drawable/buttonback"
+              android:text="Account"
+              android:textColor="@color/white"
+              android:textStyle="bold"
+              android:textSize="20sp"
+              />
+
+            <RelativeLayout
+                android:id="@+id/btn2"
+                android:layout_below="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttonback">
+
+                <TextView
+                    android:id="@+id/nt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOTIFICATION ALERT"
+                    android:textSize="20sp"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+                <Switch
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+
+                    android:id="@+id/sswitch"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_below="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttonback"
+                android:text="PRIVACY  POLICY"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_below="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttonback"
+                android:text="TERMS  &amp;  CONDITIONS"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_below="@+id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttonback"
+                android:text="HELP  &amp;  SUPPORT"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backred"
+    tools:context=".ui.termsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/hey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms / Conditions"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/hi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By accessing the App, you are agreeing to be bound by these App's terms and conditions of use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws.If you do not agree with any of these terms,you are prohibited from using this App.The materials contained in this App are protected by applicable copyrights and trade mark laws."
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:weightSum="2"
+           android:orientation="horizontal">
+
+           <Button
+               android:id="@+id/accept"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:background="@drawable/buttonback"
+               android:layout_marginHorizontal="10dp"
+               android:layout_marginTop="70dp"
+               android:text="Decline"
+               android:textSize="20sp"/>
+           <Button
+               android:id="@+id/dec"
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:background="@drawable/buttonback"
+               android:layout_marginHorizontal="10dp"
+               android:layout_marginTop="70dp"
+               android:text="Accept"
+               android:textSize="20sp"/>
+       </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
